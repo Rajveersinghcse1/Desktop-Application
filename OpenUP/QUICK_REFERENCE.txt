@@ -1,0 +1,171 @@
+╔════════════════════════════════════════════════════════════╗
+║                   OpenUP Quick Reference                   ║
+║          Universal File Preview & Visualization            ║
+╚════════════════════════════════════════════════════════════╝
+
+🚀 QUICK START
+──────────────────────────────────────────────────────────────
+  Windows:     Double-click "launch.bat"
+  With File:   launch.bat "C:\path\to\file.las"
+  Command:     python main.py
+
+
+📁 SUPPORTED FORMATS (Table View)
+──────────────────────────────────────────────────────────────
+  ✅ CSV/TSV         .csv, .tsv      | Spreadsheet data
+  ✅ Excel           .xlsx, .xls     | Microsoft Excel
+  ✅ LAS/LAZ         .las, .laz      | Point cloud (NEW!)
+  ✅ Images          .png, .jpg      | Raster images
+  ✅ Text            .txt, .md, .log | Text files
+  ✅ JSON            .json           | JSON data
+
+
+⌨️  KEYBOARD SHORTCUTS
+──────────────────────────────────────────────────────────────
+  Ctrl+O     Open file
+  Ctrl+R     Refresh view
+  Ctrl+B     Toggle file browser
+  Ctrl+Q     Quit application
+
+
+🎯 VIEWING YOUR DATA
+──────────────────────────────────────────────────────────────
+  1. Launch application (launch.bat)
+  2. Browse to file (left panel)
+  3. Double-click file
+  4. Switch tabs:
+     → Metadata/Table: Info & statistics
+     → Visualization: Data table or image
+
+
+📊 LAS/LAZ FILES (Point Clouds)
+──────────────────────────────────────────────────────────────
+  Display:     Table format with all dimensions
+  Columns:     X, Y, Z, Intensity, Classification, etc.
+  Preview:     First 1,000 points
+  Metadata:    Point count, bounds, version, scale
+  
+  Example: RealWorld_OpenPit_Mine.las
+    ✓ Loads in < 1 second
+    ✓ Shows X/Y/Z coordinates
+    ✓ Displays classification data
+    ✓ Full metadata available
+
+
+🔧 INSTALLATION
+──────────────────────────────────────────────────────────────
+  # Create virtual environment
+  python -m venv venv
+  
+  # Activate (Windows)
+  venv\Scripts\activate
+  
+  # Install dependencies
+  pip install -r requirements.txt
+  
+  # Install LAS support
+  pip install laspy lazrs
+
+
+📚 DOCUMENTATION
+──────────────────────────────────────────────────────────────
+  README.md               Project overview
+  QUICK_START.md          5-minute guide
+  DATA_VIEWING_GUIDE.md   Data format details
+  PLUGIN_DEVELOPMENT.md   Create plugins
+  DEVELOPMENT.md          Developer guide
+
+
+🐛 TROUBLESHOOTING
+──────────────────────────────────────────────────────────────
+  Issue: LAS files show "Unsupported"
+  Fix:   pip install laspy lazrs
+  
+  Issue: Application won't start
+  Fix:   pip install -r requirements.txt
+  
+  Issue: Import errors
+  Fix:   Restart application after installing packages
+
+
+💡 PRO TIPS
+──────────────────────────────────────────────────────────────
+  • Use domain filters (checkboxes) to show only specific types
+  • Recent files available in File menu
+  • Click column headers to sort table data
+  • Check Metadata tab before viewing large files
+  • Logs saved to ~/.openup/logs/ for debugging
+
+
+📈 PERFORMANCE
+──────────────────────────────────────────────────────────────
+  Startup:     < 2 seconds
+  File Open:   < 1 second (cached)
+  Memory:      ~100 MB base
+  Preview:     1,000 rows/points max
+  Cache:       Automatic (configurable)
+
+
+🎮 EXAMPLE USAGE
+──────────────────────────────────────────────────────────────
+  # View LAS point cloud
+  launch.bat "C:\Data\mine.las"
+  
+  # View CSV data
+  launch.bat "C:\Data\data.csv"
+  
+  # Browse files
+  launch.bat
+
+
+📦 PROJECT STRUCTURE
+──────────────────────────────────────────────────────────────
+  OpenUP/
+  ├── main.py              Entry point
+  ├── launch.bat           Quick launcher
+  ├── src/
+  │   ├── core/           Core logic
+  │   ├── ui/             User interface
+  │   ├── plugins/        Format plugins
+  │   │   ├── text_plugin.py
+  │   │   ├── image_plugin.py
+  │   │   ├── data_plugin.py
+  │   │   └── las_plugin.py    ← NEW!
+  │   └── utils/          Utilities
+  ├── docs/               Documentation
+  └── tests/              Unit tests
+
+
+🌟 KEY FEATURES
+──────────────────────────────────────────────────────────────
+  ✓ Plugin-based architecture
+  ✓ Table view for all data formats
+  ✓ Background processing
+  ✓ Three-tier caching
+  ✓ Cross-platform support
+  ✓ Dark theme
+  ✓ Settings dialog
+  ✓ Recent files tracking
+
+
+📊 CURRENT STATUS
+──────────────────────────────────────────────────────────────
+  Version:     1.1.0
+  Plugins:     4 loaded
+  Status:      Production Ready ✅
+  Tested:      Windows 11
+  Python:      3.11+
+  Updated:     November 14, 2025
+
+
+🔗 LINKS
+──────────────────────────────────────────────────────────────
+  GitHub:      github.com/Rajveersinghcse1/Web-dev
+  License:     MIT
+  Support:     See docs/ folder
+
+
+╔════════════════════════════════════════════════════════════╗
+║               Made with ❤️ for Data Scientists             ║
+║                    OpenUP v1.1.0 - 2025                    ║
+╚════════════════════════════════════════════════════════════╝

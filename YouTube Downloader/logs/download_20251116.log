@@ -1,0 +1,4 @@
+2025-11-16 18:07:47,502 - YouTubeDownloader - INFO - Applied pytube cipher fix
+2025-11-16 18:07:47,502 - YouTubeDownloader - INFO - Configured pytube clients
+2025-11-16 18:07:47,502 - YouTubeDownloader - INFO - Using pytube for YouTube downloads
+2025-11-16 18:07:47,659 - YouTubeDownloader - INFO - Application initialized successfully
