@@ -1,0 +1,63 @@
+# Docker ignore file for AI Avatar Studio
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Data directories (will be mounted as volumes)
+data/
+models/
+output/
+docker_volumes/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Large model files (download in container)
+*.pth
+*.pt
+*.onnx
+*.pb
+
+# Test files
+tests/
+*.pytest_cache/
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# Local development
+local_output/
+.env.local

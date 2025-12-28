@@ -1,0 +1,52 @@
+# Docker-optimized requirements - Pre-built wheels only (no compilation)
+# Optimized for fast builds and compatibility
+
+# ===== CORE DEPENDENCIES =====
+numpy==1.26.4
+
+# PyTorch CPU-only (much smaller, faster)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.1.0
+torchvision==0.16.0
+torchaudio==2.1.0
+
+# ===== GUI FRAMEWORK =====
+customtkinter>=5.2.0
+pillow>=10.0.0
+
+# ===== COMPUTER VISION (headless versions - no GUI dependencies) =====
+opencv-python-headless>=4.8.0
+mediapipe>=0.10.0
+
+# ===== AUDIO PROCESSING =====
+pydub>=0.25.1
+librosa>=0.10.0
+soundfile>=0.12.0
+scipy>=1.11.0
+noisereduce>=3.0.0
+
+# ===== TEXT-TO-SPEECH =====
+pyttsx3>=2.90
+gTTS>=2.4.0
+
+# ===== VIDEO PROCESSING =====
+imageio>=2.31.0
+imageio-ffmpeg>=0.4.9
+moviepy>=1.0.3
+scikit-image>=0.21.0
+
+# ===== BACKGROUND REMOVAL =====
+rembg>=2.0.50
+
+# ===== DATABASE =====
+sqlalchemy>=2.0.0
+
+# ===== UTILITIES =====
+requests>=2.31.0
+tqdm>=4.66.0
+wget>=3.2
+psutil>=5.9.0
+python-dotenv>=1.0.0
+pyyaml>=6.0
+colorlog>=6.7.0
+typing-extensions>=4.10.0

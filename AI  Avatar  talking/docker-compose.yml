@@ -1,0 +1,64 @@
+# Docker Compose Configuration for AI Avatar Studio
+version: '3.8'
+
+services:
+  ai-avatar-studio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ai-avatar-studio
+    
+    # Restart policy
+    restart: unless-stopped
+    
+    # Environment variables
+    environment:
+      - DATABASE_PATH=/app/data/database/projects.db
+      - MODELS_PATH=/app/models
+      - OUTPUT_PATH=/app/output
+      - CACHE_PATH=/app/data/cache
+      - TZ=UTC
+      - USE_GPU=false
+      - LOG_LEVEL=INFO
+      - PYTHONUNBUFFERED=1
+    
+    # Volume mounts for persistent data
+    volumes:
+      # Database and application data
+      - ./docker_volumes/data:/app/data
+      
+      # AI Models
+      - ./docker_volumes/models:/app/models
+      
+      # Generated videos and outputs
+      - ./docker_volumes/output:/app/output
+      
+      # Config directory
+      - ./config:/app/config:ro
+    
+    # Port mapping
+    ports:
+      - "8080:8080"
+    
+    # Resource limits
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 8G
+        reservations:
+          cpus: '2'
+          memory: 4G
+    
+    # Health check
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sqlite3; conn = sqlite3.connect('/app/data/database/projects.db'); conn.close()"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+# Network configuration
+networks:
+  default:
+    name: ai-avatar-network

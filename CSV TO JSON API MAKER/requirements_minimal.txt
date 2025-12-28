@@ -1,0 +1,6 @@
+# CSV to JSON API Converter - Minimal Dependencies
+# Only essential packages - no bloat
+pandas>=2.0.0
+flask>=3.0.0
+flask-cors>=4.0.0
+openpyxl>=3.1.0  # For Excel support

@@ -1,0 +1,148 @@
+2025-12-22 17:36:30 - ai_avatar_studio - [32mINFO[0m - main.py:230 - Running system checks...
+2025-12-22 17:36:35 - ai_avatar_studio - [33mWARNING[0m - main.py:232 - System checks failed, but continuing anyway...
+2025-12-22 17:37:18 - ai_avatar_studio - [32mINFO[0m - main.py:46 - Initializing AI Avatar Studio...
+2025-12-22 17:37:18 - ai_avatar_studio - [32mINFO[0m - main.py:62 -   - Total projects: 0
+2025-12-22 17:37:18 - ai_avatar_studio - [32mINFO[0m - main.py:65 -   - Total generations: 0
+2025-12-22 17:37:18 - ai_avatar_studio - [32mINFO[0m - main.py:160 - Starting GUI mode...
+2025-12-22 17:37:18 - ai_avatar_studio - [31mERROR[0m - main.py:209 - Failed to import GUI components: cannot import name 'ModelManager' from 'utils' (C:\Users\rkste\Desktop\AI  Avatar  talking\utils\__init__.py)
+2025-12-22 17:37:18 - ai_avatar_studio - [32mINFO[0m - main.py:90 - Running in CLI mode...
+2025-12-22 17:39:06 - ai_avatar_studio - [32mINFO[0m - main.py:260 - Application exited normally
+2025-12-22 17:52:22 - ai_avatar_studio - [32mINFO[0m - main.py:230 - Running system checks...
+2025-12-22 17:52:29 - ai_avatar_studio - [35mCRITICAL[0m - main.py:269 - Critical error: Unable to convert function return value to a Python type! The signature was
+	() -> handle
+Traceback (most recent call last):
+  File "C:\Users\rkste\Desktop\AI  Avatar  talking\main.py", line 231, in main
+    if not check_system_requirements():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rkste\Desktop\AI  Avatar  talking\utils\system_checker.py", line 293, in check_system_requirements
+    results = checker.check_all()
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rkste\Desktop\AI  Avatar  talking\utils\system_checker.py", line 33, in check_all
+    'python_packages': self.check_python_packages(),
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rkste\Desktop\AI  Avatar  talking\utils\system_checker.py", line 184, in check_python_packages
+    __import__(package.replace('-', '_').split('[')[0])
+  File "C:\Users\rkste\AppData\Local\Programs\Python\Python311\Lib\site-packages\mediapipe\__init__.py", line 15, in <module>
+    import mediapipe.tasks.python as tasks
+  File "C:\Users\rkste\AppData\Local\Programs\Python\Python311\Lib\site-packages\mediapipe\tasks\python\__init__.py", line 17, in <module>
+    from . import audio
+  File "C:\Users\rkste\AppData\Local\Programs\Python\Python311\Lib\site-packages\mediapipe\tasks\python\audio\__init__.py", line 18, in <module>
+    import mediapipe.tasks.python.audio.audio_classifier
+  File "C:\Users\rkste\AppData\Local\Programs\Python\Python311\Lib\site-packages\mediapipe\tasks\python\audio\audio_classifier.py", line 21, in <module>
+    from mediapipe.tasks.python.audio.core import audio_task_running_mode
+  File "C:\Users\rkste\AppData\Local\Programs\Python\Python311\Lib\site-packages\mediapipe\tasks\python\audio\core\audio_task_running_mode.py", line 19, in <module>
+    from mediapipe.tasks.python.core.optional_dependencies import doc_controls
+  File "C:\Users\rkste\AppData\Local\Programs\Python\Python311\Lib\site-packages\mediapipe\tasks\python\core\optional_dependencies.py", line 20, in <module>
+    from tensorflow.tools.docs import doc_controls
+  File "C:\Users\rkste\AppData\Local\Programs\Python\Python311\Lib\site-packages\tensorflow\__init__.py", line 38, in <module>
+    from tensorflow.python.tools import module_util as _module_util
+  File "C:\Users\rkste\AppData\Local\Programs\Python\Python311\Lib\site-packages\tensorflow\python\__init__.py", line 37, in <module>
+    from tensorflow.python.eager import context
+  File "C:\Users\rkste\AppData\Local\Programs\Python\Python311\Lib\site-packages\tensorflow\python\eager\context.py", line 36, in <module>
+    from tensorflow.python.eager import execute
+  File "C:\Users\rkste\AppData\Local\Programs\Python\Python311\Lib\site-packages\tensorflow\python\eager\execute.py", line 21, in <module>
+    from tensorflow.python.framework import dtypes
+  File "C:\Users\rkste\AppData\Local\Programs\Python\Python311\Lib\site-packages\tensorflow\python\framework\dtypes.py", line 38, in <module>
+    _np_bfloat16 = pywrap_bfloat16.bfloat16_type()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Unable to convert function return value to a Python type! The signature was
+	() -> handle
+2025-12-22 17:53:39 - ai_avatar_studio - [32mINFO[0m - main.py:230 - Running system checks...
+2025-12-22 17:53:51 - ai_avatar_studio - [33mWARNING[0m - main.py:232 - System checks failed, but continuing anyway...
+2025-12-22 17:54:08 - ai_avatar_studio - [32mINFO[0m - main.py:46 - Initializing AI Avatar Studio...
+2025-12-22 17:54:08 - ai_avatar_studio - [32mINFO[0m - main.py:62 -   - Total projects: 0
+2025-12-22 17:54:08 - ai_avatar_studio - [32mINFO[0m - main.py:65 -   - Total generations: 0
+2025-12-22 17:54:08 - ai_avatar_studio - [32mINFO[0m - main.py:160 - Starting GUI mode...
+2025-12-22 17:54:08 - ai_avatar_studio - [31mERROR[0m - main.py:209 - Failed to import GUI components: cannot import name 'ModelManager' from 'utils' (C:\Users\rkste\Desktop\AI  Avatar  talking\utils\__init__.py)
+2025-12-22 17:54:08 - ai_avatar_studio - [32mINFO[0m - main.py:90 - Running in CLI mode...
+2025-12-22 17:54:22 - ai_avatar_studio - [32mINFO[0m - main.py:260 - Application exited normally
+2025-12-22 17:57:54 - ai_avatar_studio - [32mINFO[0m - main.py:230 - Running system checks...
+2025-12-22 17:57:59 - ai_avatar_studio - [33mWARNING[0m - main.py:232 - System checks failed, but continuing anyway...
+2025-12-22 17:58:30 - ai_avatar_studio - [32mINFO[0m - main.py:264 - Application interrupted by user
+2025-12-22 17:58:47 - ai_avatar_studio - [32mINFO[0m - main.py:230 - Running system checks...
+2025-12-22 17:58:53 - ai_avatar_studio - [32mINFO[0m - main.py:46 - Initializing AI Avatar Studio...
+2025-12-22 17:58:53 - ai_avatar_studio - [32mINFO[0m - main.py:51 - [OK] Directory structure ready
+2025-12-22 17:58:53 - ai_avatar_studio - [32mINFO[0m - main.py:58 - [OK] Database initialized: C:\Users\rkste\Desktop\AI  Avatar  talking\data\database\projects.db
+2025-12-22 17:58:53 - ai_avatar_studio - [32mINFO[0m - main.py:62 -   - Total projects: 0
+2025-12-22 17:58:53 - ai_avatar_studio - [32mINFO[0m - main.py:65 -   - Total generations: 0
+2025-12-22 17:58:53 - ai_avatar_studio - [32mINFO[0m - main.py:80 - [OK] Temporary files cleaned
+2025-12-22 17:58:53 - ai_avatar_studio - [32mINFO[0m - main.py:84 - [OK] Application initialized successfully
+2025-12-22 17:58:53 - ai_avatar_studio - [32mINFO[0m - main.py:90 - Running in CLI mode...
+2025-12-22 17:59:33 - ai_avatar_studio - [32mINFO[0m - main.py:230 - Running system checks...
+2025-12-22 17:59:39 - ai_avatar_studio - [32mINFO[0m - main.py:46 - Initializing AI Avatar Studio...
+2025-12-22 17:59:39 - ai_avatar_studio - [32mINFO[0m - main.py:51 - [OK] Directory structure ready
+2025-12-22 17:59:39 - ai_avatar_studio - [32mINFO[0m - main.py:58 - [OK] Database initialized: C:\Users\rkste\Desktop\AI  Avatar  talking\data\database\projects.db
+2025-12-22 17:59:39 - ai_avatar_studio - [32mINFO[0m - main.py:62 -   - Total projects: 0
+2025-12-22 17:59:39 - ai_avatar_studio - [32mINFO[0m - main.py:65 -   - Total generations: 0
+2025-12-22 17:59:39 - ai_avatar_studio - [32mINFO[0m - main.py:80 - [OK] Temporary files cleaned
+2025-12-22 17:59:39 - ai_avatar_studio - [32mINFO[0m - main.py:84 - [OK] Application initialized successfully
+2025-12-22 17:59:39 - ai_avatar_studio - [32mINFO[0m - main.py:160 - Starting GUI mode...
+2025-12-22 17:59:40 - ai_avatar_studio - [32mINFO[0m - main.py:205 - [OK] GUI initialized
+2025-12-22 18:00:34 - ai_avatar_studio - [32mINFO[0m - main.py:264 - Application interrupted by user
+2025-12-22 18:01:38 - ai_avatar_studio - [32mINFO[0m - main.py:230 - Running system checks...
+2025-12-22 18:01:43 - ai_avatar_studio - [32mINFO[0m - main.py:46 - Initializing AI Avatar Studio...
+2025-12-22 18:01:43 - ai_avatar_studio - [32mINFO[0m - main.py:51 - [OK] Directory structure ready
+2025-12-22 18:01:43 - ai_avatar_studio - [32mINFO[0m - main.py:58 - [OK] Database initialized: C:\Users\rkste\Desktop\AI  Avatar  talking\data\database\projects.db
+2025-12-22 18:01:43 - ai_avatar_studio - [32mINFO[0m - main.py:62 -   - Total projects: 0
+2025-12-22 18:01:43 - ai_avatar_studio - [32mINFO[0m - main.py:65 -   - Total generations: 0
+2025-12-22 18:01:43 - ai_avatar_studio - [32mINFO[0m - main.py:80 - [OK] Temporary files cleaned
+2025-12-22 18:01:43 - ai_avatar_studio - [32mINFO[0m - main.py:84 - [OK] Application initialized successfully
+2025-12-22 18:01:43 - ai_avatar_studio - [32mINFO[0m - main.py:160 - Starting GUI mode...
+2025-12-22 18:01:45 - ai_avatar_studio - [32mINFO[0m - main.py:205 - [OK] GUI initialized
+2025-12-22 18:04:32 - ai_avatar_studio - [32mINFO[0m - main.py:264 - Application interrupted by user
+2025-12-22 18:05:07 - ai_avatar_studio - [32mINFO[0m - main.py:230 - Running system checks...
+2025-12-22 18:05:12 - ai_avatar_studio - [32mINFO[0m - main.py:46 - Initializing AI Avatar Studio...
+2025-12-22 18:05:12 - ai_avatar_studio - [32mINFO[0m - main.py:51 - [OK] Directory structure ready
+2025-12-22 18:05:12 - ai_avatar_studio - [32mINFO[0m - main.py:58 - [OK] Database initialized: C:\Users\rkste\Desktop\AI  Avatar  talking\data\database\projects.db
+2025-12-22 18:05:12 - ai_avatar_studio - [32mINFO[0m - main.py:62 -   - Total projects: 1
+2025-12-22 18:05:12 - ai_avatar_studio - [32mINFO[0m - main.py:65 -   - Total generations: 0
+2025-12-22 18:05:12 - ai_avatar_studio - [32mINFO[0m - main.py:80 - [OK] Temporary files cleaned
+2025-12-22 18:05:12 - ai_avatar_studio - [32mINFO[0m - main.py:84 - [OK] Application initialized successfully
+2025-12-22 18:05:12 - ai_avatar_studio - [32mINFO[0m - main.py:160 - Starting GUI mode...
+2025-12-22 18:05:14 - ai_avatar_studio - [32mINFO[0m - main.py:205 - [OK] GUI initialized
+2025-12-22 18:07:37 - ai_avatar_studio - [32mINFO[0m - main.py:264 - Application interrupted by user
+2025-12-22 18:08:48 - ai_avatar_studio - [32mINFO[0m - main.py:230 - Running system checks...
+2025-12-22 18:08:53 - ai_avatar_studio - [32mINFO[0m - main.py:46 - Initializing AI Avatar Studio...
+2025-12-22 18:08:53 - ai_avatar_studio - [32mINFO[0m - main.py:51 - [OK] Directory structure ready
+2025-12-22 18:08:53 - ai_avatar_studio - [32mINFO[0m - main.py:58 - [OK] Database initialized: C:\Users\rkste\Desktop\AI  Avatar  talking\data\database\projects.db
+2025-12-22 18:08:53 - ai_avatar_studio - [32mINFO[0m - main.py:62 -   - Total projects: 2
+2025-12-22 18:08:53 - ai_avatar_studio - [32mINFO[0m - main.py:65 -   - Total generations: 0
+2025-12-22 18:08:53 - ai_avatar_studio - [32mINFO[0m - main.py:80 - [OK] Temporary files cleaned
+2025-12-22 18:08:53 - ai_avatar_studio - [32mINFO[0m - main.py:84 - [OK] Application initialized successfully
+2025-12-22 18:08:53 - ai_avatar_studio - [32mINFO[0m - main.py:160 - Starting GUI mode...
+2025-12-22 18:08:55 - ai_avatar_studio - [32mINFO[0m - main.py:205 - [OK] GUI initialized
+2025-12-22 18:09:21 - ai_avatar_studio - [32mINFO[0m - main.py:264 - Application interrupted by user
+2025-12-22 18:38:15 - ai_avatar_studio - [32mINFO[0m - main.py:230 - Running system checks...
+2025-12-22 18:38:27 - ai_avatar_studio - [32mINFO[0m - main.py:46 - Initializing AI Avatar Studio...
+2025-12-22 18:38:27 - ai_avatar_studio - [32mINFO[0m - main.py:51 - [OK] Directory structure ready
+2025-12-22 18:38:27 - ai_avatar_studio - [32mINFO[0m - main.py:58 - [OK] Database initialized: C:\Users\rkste\Desktop\AI  Avatar  talking\data\database\projects.db
+2025-12-22 18:38:27 - ai_avatar_studio - [32mINFO[0m - main.py:62 -   - Total projects: 3
+2025-12-22 18:38:27 - ai_avatar_studio - [32mINFO[0m - main.py:65 -   - Total generations: 1
+2025-12-22 18:38:27 - ai_avatar_studio - [32mINFO[0m - main.py:69 -   - Success rate: 0.00%
+2025-12-22 18:38:27 - ai_avatar_studio - [32mINFO[0m - main.py:80 - [OK] Temporary files cleaned
+2025-12-22 18:38:27 - ai_avatar_studio - [32mINFO[0m - main.py:84 - [OK] Application initialized successfully
+2025-12-22 18:38:27 - ai_avatar_studio - [32mINFO[0m - main.py:160 - Starting GUI mode...
+2025-12-22 18:38:29 - ai_avatar_studio - [32mINFO[0m - main.py:205 - [OK] GUI initialized
+2025-12-22 19:12:19 - ai_avatar_studio - [32mINFO[0m - main.py:230 - Running system checks...
+2025-12-22 19:12:26 - ai_avatar_studio - [32mINFO[0m - main.py:46 - Initializing AI Avatar Studio...
+2025-12-22 19:12:26 - ai_avatar_studio - [32mINFO[0m - main.py:51 - [OK] Directory structure ready
+2025-12-22 19:12:26 - ai_avatar_studio - [32mINFO[0m - main.py:58 - [OK] Database initialized: C:\Users\rkste\Desktop\AI  Avatar  talking\data\database\projects.db
+2025-12-22 19:12:26 - ai_avatar_studio - [32mINFO[0m - main.py:62 -   - Total projects: 4
+2025-12-22 19:12:26 - ai_avatar_studio - [32mINFO[0m - main.py:65 -   - Total generations: 2
+2025-12-22 19:12:26 - ai_avatar_studio - [32mINFO[0m - main.py:69 -   - Success rate: 0.00%
+2025-12-22 19:12:26 - ai_avatar_studio - [32mINFO[0m - main.py:80 - [OK] Temporary files cleaned
+2025-12-22 19:12:26 - ai_avatar_studio - [32mINFO[0m - main.py:84 - [OK] Application initialized successfully
+2025-12-22 19:12:26 - ai_avatar_studio - [32mINFO[0m - main.py:160 - Starting GUI mode...
+2025-12-22 19:12:28 - ai_avatar_studio - [32mINFO[0m - main.py:205 - [OK] GUI initialized
+2025-12-22 19:12:59 - ai_avatar_studio - [32mINFO[0m - main.py:264 - Application interrupted by user
+2025-12-22 19:15:57 - ai_avatar_studio - [32mINFO[0m - main.py:230 - Running system checks...
+2025-12-22 19:16:03 - ai_avatar_studio - [32mINFO[0m - main.py:46 - Initializing AI Avatar Studio...
+2025-12-22 19:16:03 - ai_avatar_studio - [32mINFO[0m - main.py:51 - [OK] Directory structure ready
+2025-12-22 19:16:03 - ai_avatar_studio - [32mINFO[0m - main.py:58 - [OK] Database initialized: C:\Users\rkste\Desktop\AI  Avatar  talking\data\database\projects.db
+2025-12-22 19:16:03 - ai_avatar_studio - [32mINFO[0m - main.py:62 -   - Total projects: 5
+2025-12-22 19:16:03 - ai_avatar_studio - [32mINFO[0m - main.py:65 -   - Total generations: 3
+2025-12-22 19:16:03 - ai_avatar_studio - [32mINFO[0m - main.py:69 -   - Success rate: 0.00%
+2025-12-22 19:16:03 - ai_avatar_studio - [32mINFO[0m - main.py:80 - [OK] Temporary files cleaned
+2025-12-22 19:16:03 - ai_avatar_studio - [32mINFO[0m - main.py:84 - [OK] Application initialized successfully
+2025-12-22 19:16:03 - ai_avatar_studio - [32mINFO[0m - main.py:160 - Starting GUI mode...
+2025-12-22 19:16:04 - ai_avatar_studio - [32mINFO[0m - main.py:205 - [OK] GUI initialized
